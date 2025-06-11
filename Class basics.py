@@ -1,6 +1,6 @@
 class Apple_design:
     count=0 #class variables or static variables
-    def __init__(self,cpu,ram):  #Constructor
+    def __init__(self,cpu,ram):  # self is default Constructor
         self.cpu=cpu
         self.ram=ram
     def mobile(self,cpu,ram):
