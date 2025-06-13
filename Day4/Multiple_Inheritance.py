@@ -1,23 +1,23 @@
-class parent:
+class father:
     def feature1(self):
-        print("Feature 1 of parent")
+        print("Feature 1 of father")
 
     def feature2(self):
-        print("Feature 2 of parent")
-class mother(parent):  # mother is inheriting methods of parent
+        print("Feature 2 of father")
+class mother:
     def feature3(self):
         print("Feature 3 of mother")
 
     def feature4(self):
         print("Feature 4 of mother")
 
-class child(mother):   # child is inheriting methods of mother or we can directly pass mother and parent both as argument to access their methods
+class child(mother,father):   # child is inheriting methods of mother and father
     def feature5(self):
         print("Feature 5 of child")
 
     def feature6(self):
         print("Feature 6 of child")
-p=parent()
+p=father()
 m=mother()
 c=child()
 c.feature1()
