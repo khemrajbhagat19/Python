@@ -1,6 +1,3 @@
-from logging.handlers import DEFAULT_SOAP_LOGGING_PORT
-
-
 class BankAccount:
     def __init__(self,account_number,balance):
         self.account_number=account_number
